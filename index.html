@@ -1,46 +1,130 @@
   <!DOCTYPE html>
+
   <html lang="pl">
 
-  <head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
       
-    <link href="https://styleguide.brainly.com/77.2.0/style-guide.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="css/quiz.css"> 
-    <link rel="stylesheet" href="css/crossbrowser.css"> 
-     
+      <title>Zadanie SEO</title>
 
-    <title>QuizApp</title>
+      <!--  META TAGS  -->
+      <meta name="description" content="To jest strona na zadanie">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta charset="UTF-8">
+
+      <!-- CASCADE STYLE SHEETS -->
+      <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+      <link rel="stylesheet" href="css/index.css"> 
+      <link rel="stylesheet" href="css/buttons.css">
+      <link rel="stylesheet" href="css/popup.css">
+      <link rel="stylesheet" href="css/rwd.css">
+
+
+      <!--  FONT  -->
+      <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    </head>
+
+    <body>
+
+      <!--NAVBAR-->
+      <nav class="navbar-hd">        
+        <div class="nav-logo">
+          <a href="#" class="logo" >Logo</a>
+        </div>
+        <div class="nav-buttons">
+          <button class="button-blue">Infolinia</button>
+          <button class="button-blue">Napisz do nas</button>
+        </div>
+        <div style="clear:both"></div>
+      </nav>
+
       
-    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+      <!--HEADER-->
+      <header>
+        <div class="header-text">
+          <h2>Lorem</h2>
+          <h2>ipsum ipsum</h2>
+          <h2>Lorem</h2>
+        </div>
+      </header>
 
-  </head>
+      <!--PHP GOES HERE-->
+      <section class="offers-container">
 
+        <!--Singe Odd Offer -->
+        <article class="offers-offer">
+          <div class="offers-offer-content">
+            <h3>lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+            <span>LoremIpsum@dolor.la</span>
+          </div>
+          <div class="offers-offer-action">
+            <button class="button-blue">Złóż zapytanie ofertowe</button>
+            <button class="button-gray">Zobacz więcej</button>
+          </div>
+          <div style="clear:both"></div>
+        </article>
 
-  <body>
-      
-     <section id="quiz-box"></section> 
+        <!--Singe Even Offer -->
+        <article class="offers-offer">
+          <div class="offers-offer-content">
+            <h3>lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+            <span>LoremIpsum@dolor.la</span>
+          </div>
+          <div class="offers-offer-action">
+            <button class="button-blue">Złóż zapytanie ofertowe</button>
+            <button class="button-gray">Zobacz więcej</button>
+          </div>
+          <div style="clear:both"></div>
+        </article>
 
-          <header class="header" id="index-header-container">
-          <br>
-          <h1>Welcome to Quiz App</h1>
-          <br>
-          <h3>Please enter your username</h3>
-          <br>
-          <label for="username">Name<br>
-          <input name="username" id="username" type="text" class="header-input-name" placeholder=""></label>
+        <!--Singe Odd Offer -->
+        <article class="offers-offer">
+          <div class="offers-offer-content">
+            <h3>lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.</p>
+            <span>LoremIpsum@dolor.la</span>
+          </div>
+          <div class="offers-offer-action">
+            <button class="button-blue">Złóż zapytanie ofertowe</button>
+            <button class="button-gray">Zobacz więcej</button>
+          </div>
+          <div style="clear:both"></div>
+        </article>
+
+      </section>
+
+      <!--  FOOTER  -->
+      <footer>
         
-          <p class="header-button-orange" onclick="setUp();" >
-            BEGIN QUIZ
-          </p>
-        </header> 
+        <div class="footer-logo">
+          <a href="#" class="logo" >Logo</a>
+        </div>
+
+        <div class="footer-buttons">
+          <button class="button-blue">Infolinia</button>
+          <button class="button-blue">Napisz do nas</button>
+        </div>
+        
+      </footer>
 
 
+      <script src="js/jquery-3.2.1.min.js"></script>  
+      <script src="js/bootstrap.min.js"></script>  
+      <script src="js/popup.js"></script>  
+        
+    </body>
 
-     <script src="js/quiz-loader.js"></script>  
-      
-  </body>
   </html>
          
          

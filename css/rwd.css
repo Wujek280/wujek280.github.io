@@ -1,0 +1,26 @@
+
+@media (max-width: 786px) {
+
+    button{
+      color:yellow;
+      display: block;
+      width: 90%;
+      margin: 20px auto ;
+    }
+    section.offers-container {
+      margin:auto;
+    }
+
+    section.offers-container > article.offers-offer:nth-child(odd) .offers-offer-content,
+    section.offers-container > article.offers-offer:nth-child(even) .offers-offer-content,
+    section.offers-container > article.offers-offer:nth-child(odd) .offers-offer-action,
+    section.offers-container > article.offers-offer:nth-child(even) .offers-offer-action {
+      width: 100%;
+      text-align: center;
+      float: none;
+    }
+
+    footer{
+      display: none;
+    }
+}

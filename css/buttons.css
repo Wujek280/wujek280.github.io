@@ -1,0 +1,28 @@
+button {
+	width: auto;
+	color: #fff;
+	font-size: 1.33em;
+	padding:7px 12px;
+	margin: 0px 5px;
+	margin-bottom:10px;
+	border: none;
+	border-radius: 3px;
+}
+
+
+button.button-blue{
+	background-color: rgb(34, 62, 129);
+}
+button.button-blue:hover{
+	background-color: rgb(60, 80, 150);
+}
+
+
+button.button-gray{
+	background-color: rgb(34, 31, 31);
+}
+button.button-gray:hover{
+	background-color: rgb(60, 60, 60);
+}
+
+
