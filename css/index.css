@@ -1,7 +1,7 @@
 body{
     background-color: #fff;
     margin: 0;
-    font-family: Lato;
+    font-family: sans-serif;
     min-width: 786px;
 }
 
@@ -9,6 +9,8 @@ h3{
 	margin: 0;
 	margin-bottom:0.75em;
 }
+
+/******************************************************/
 /*NAV*/
 nav{
 	min-width: 786px;
@@ -42,17 +44,19 @@ a.logo {
 	color:rgb(34, 62, 129);
 	background-color: gold;
 }
- .nav-buttons > button {
+ .nav-buttons > button,
+ footer > div > button {
  	float:right;
  	width: 250px;
  	margin: 0px auto ;
  }
 
- .nav-buttons > button:nth-child(1){
+ .nav-buttons > button:nth-child(1),
+ footer > div > button{
  	margin-left:10px;
  }
 
-
+/******************************************************/
 /*HEADER*/
 
 header {
@@ -81,7 +85,9 @@ header .header-text > h2:nth-child(odd){
 	text-transform: capitalize;
 	}
 
+/******************************************************/
 /*SECTION*/
+
 section.offers-container{
 }
 
@@ -119,10 +125,28 @@ section.offers-container > article.offers-offer:nth-child(even) .offers-offer-co
 	text-transform: capitalize;
 }
 
-footer > .footer-logo{
+/******************************************************/
+/*FOOTER*/
+footer {
+	margin:40px 75px 0px;
+    min-height: 100px
+}
 
+footer > .footer-logo{
+	min-height: 40px;
+	text-align: center;
 }
 
 footer > .footer-buttons{
-	
+	min-height: 40px;
+	text-align: center;	
+}
+
+footer > div > button {
+	float: none;
+}
+.footer-logo > a.logo {
+	text-align: center;
+	position: initial;
+	margin: 20px auto;
 }
