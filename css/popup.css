@@ -1,0 +1,60 @@
+.backgroundDiv {
+	z-index: 200;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left:0;
+	background-color: rgba(22,22,22,0.5);
+	transition: 1s;
+	cursor: crosshair;
+}
+
+.popUpMenu {
+	box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.5);
+	z-index: 210;
+	background-color: white;
+	opacity: 1;
+	width: 100%;
+	height: 80%;
+	position: absolute;
+	top:100px;
+	left: 100px;
+}
+
+.callDiv {
+	padding: 20px;
+	width: 45%;
+	border-right: 1px solid #303030;
+	z-index: 220;
+	background-color: #787;
+	opacity: 1;
+	height: 20%;
+	margin-bottom: 60px;
+}
+
+.replyDiv{
+	padding: 20px;
+	background-color: #877;
+	width: 100%;
+	z-index: 220;
+	opacity: 1;
+	height: 50%;
+}
+
+form{
+	width: 100%;
+	height: 100%;
+}
+
+input {
+	width: 250px;
+	height: 28px;
+	margin: 0px auto 10px;
+}
+
+textarea {
+	width: 500px;
+	height: 135px;
+	resize:none;
+}

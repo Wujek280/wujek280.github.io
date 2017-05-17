@@ -13,11 +13,11 @@
 
       <!-- CASCADE STYLE SHEETS -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
       <link rel="stylesheet" href="css/index.css"> 
       <link rel="stylesheet" href="css/buttons.css">
       <link rel="stylesheet" href="css/popup.css">
       <link rel="stylesheet" href="css/rwd.css">
-
 
       <!--  FONT  -->
       <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -29,15 +29,50 @@
       <!--NAVBAR-->
       <nav class="navbar-hd">        
         <div class="nav-logo">
-          <a href="#" class="logo" >Logo</a>
+          <a href="#" class="logo">Logo</a>
         </div>
         <div class="nav-buttons">
-          <button class="button-blue">Infolinia</button>
-          <button class="button-blue">Napisz do nas</button>
+          <button class="button-blue" name="contactButton">Infolinia</button>
+          <button class="button-blue"  name="contactButton">Napisz do nas</button>
         </div>
         <div style="clear:both"></div>
-      </nav>
 
+<!-- ///////////////////////////////// -->
+
+        <div class="backgroundDiv">
+
+          <div class="popUpMenu">
+
+              <div class="callDiv">
+                <h2>Hello</h2>
+                <p>Lorme ipsum</p>
+                <i class="fa fa-telephone fa-2x"></i>
+              </div>
+                <div class="replyDiv">
+                  <form>
+                    <label for="name">Imię</label>
+                    <br>
+                    <input name="name" type="text" >
+                    <br>
+                    <button class='button-clear'>Wyczyść</button>
+                    <label for="surname">Nazwisko</label>
+                    <br>
+                    <input name="surname" type="text" >
+                    <br>
+                    <button class='button-send' onclick="formClear();">Wyślij</button>
+                    <label for="phone">Telefon</label>
+                    <br>
+                    <input name="phone" type="tel" placeholder="790 654 321..."><br>
+
+                    <label for="msg">Wiadomość</label> <br>                   
+                    <textarea name="message" placeholder="Napisz nam coś..."> </textarea>
+                  </form>
+                </div>
+            </div>
+          </div>
+
+<!-- ///////////////////////////////// -->
+      </nav>
       
       <!--HEADER-->
       <header>
@@ -108,17 +143,15 @@
       <footer>
         
         <div class="footer-buttons">
-          <button class="button-blue">Infolinia</button>
-          <button class="button-blue">Napisz do nas</button>
-        </div>
-        
+          <button class="button-blue" name="contactButton">Infolinia</button>
+          <button class="button-blue" name="contactButton">Napisz do nas</button>
+        </div>        
         
         <div class="footer-logo">
           <a href="#" class="logo" >Logo</a>
         </div>
 
       </footer>
-
 
       <script src="js/jquery-3.2.1.min.js"></script>  
       <script src="js/popup.js"></script>  

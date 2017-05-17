@@ -25,4 +25,16 @@ button.button-gray:hover{
 	background-color: rgb(60, 60, 60);
 }
 
+button.button-clear{
+	width: 200px;
+	background-color: #733;
+	position: absolute;
+	right:100px;
+}
 
+button.button-send{
+	width: 200px;
+	background-color: #373;
+	position: absolute;
+	right:100px;
+}
