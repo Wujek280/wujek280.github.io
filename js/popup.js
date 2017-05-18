@@ -6,8 +6,9 @@ $(function(){
 	
 })
 
-var popUpHTML = " <div class='popUpMenu'> <div class='callDiv'> <i class='times fa fa-times fa-2x' onclick='closePopUp();'></i> <h2>Cześć</h2> <p>Zawsze możesz do nas zadzwonić</p><a href='tel:+48664340449'><h3>+48 664 340 449</h3> <i class='phone fa fa-phone-square fa-5x'></i> </a></div><div class='replyDiv'> <i class='times fa fa-times fa-2x' onclick='closePopUp();'></i> <h2>Zostaw nam wiadomość</h2> <hr> <form> <button class='button-clear' >Wyczyść</button> <button class='button-send' >Wyślij</button> <label for='name'>Imię</label> <br><input id='name' name='name' type='text' > <br><label for='surname'>Nazwisko</label> <br><input id='surname' name='surname' type='text' > <br><label for='phone'>Telefon</label> <br><input id='phone' name='phone' type='tel' placeholder='790 654 321...'><br><label for='message' >Wiadomość</label> <br><textarea id='message' name='message' placeholder='Napisz nam coś...'></textarea> </form> </div></div>";
-var popUpMessageOnlyHTML = " <div class='popUpMenu'> <div class='replyDiv'> <i class='times fa fa-times fa-2x' onclick='closePopUp();'></i> <h2>Zostaw nam wiadomość</h2> <hr> <form> <button class='button-clear' >Wyczyść</button> <button class='button-send' >Wyślij</button> <label for='name'>Imię</label> <br><input id='name' name='name' type='text' > <br><label for='surname'>Nazwisko</label> <br><input id='surname' name='surname' type='text' > <br><label for='phone'>Telefon</label> <br><input id='phone' name='phone' type='tel' placeholder='790 654 321...'><br><label for='message' >Wiadomość</label> <br><textarea id='message' name='message' placeholder='Napisz nam coś...'></textarea> </form> </div></div>";
+var popUpHTML = "<div class='popUpMenu show'> <div class='callDiv'> <i class='times fa fa-times fa-2x' onclick='closePopUp();'></i> <h2>Infolinia</h2> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><a href='tel:+48664340449'> <h3>+48 664 340 449</h3> <i class='phone fa fa-phone-square fa-5x'></i></a></div><div class='replyDiv'> <i class='times fa fa-times fa-2x' onclick='closePopUp();'></i> <h2>Zostaw nam wiadomość</h2> <hr> <form action='https://formspree.io/s.polec@clickcommiunity.com' method='POST'><input type='submit' value='Wyślij' class='button-send' > <button class='button-clear'>Wyczyść</button>  <label for='name'>Imię i Nazwisko</label> <br><input id='name' name='name' type='text' > <br><label for='phone'>Telefon</label> <br><input id='phone' name='phone' type='tel' placeholder='790 654 321...'> <br><label for='dropdown' >Wybierz opcję z listy</label><br><select name='dropdown' id='dropdown'> <option value='-'>-</option> <option value='lorem1'>lorem1</option> <option value='lorem2'>lorem2</option> <option value='lorem3'>lorem3</option> </select> <br><label for='message' >Wiadomość</label> <br><textarea id='message' name='message' placeholder='Napisz nam coś...'></textarea> </form> </div></div>";
+
+var popUpMessageOnlyHTML = " <div class='popUpMenu'> <div class='replyDiv'> <i class='times fa fa-times fa-2x' onclick='closePopUp();'></i> <h2>Złóż zapytanie ofertowe</h2> <hr> <form action='https://formspree.io/s.polec@clickcommiunity.com' method='POST'><input type='submit' value='Wyślij' class='button-send' > <button class='button-clear'>Wyczyść</button>  <label for='name'>Imię i Nazwisko</label> <br><input id='name' name='name' type='text' > <br><label for='phone'>Telefon</label> <br><input id='phone' name='phone' type='tel' placeholder='790 654 321...'> <br><label for='dropdown' >Wybierz opcję z listy</label><br><select name='dropdown' id='dropdown'> <option value='-'>-</option> <option value='lorem1'>lorem1</option> <option value='lorem2'>lorem2</option> <option value='lorem3'>lorem3</option> </select> <br><label for='message' >Wiadomość</label> <br><textarea id='message' name='message' placeholder='Napisz nam coś...'></textarea> </form> </div></div>";
 
 function addEventListeners(){
 
@@ -21,7 +22,7 @@ function addEventListeners(){
 	}
 
 	var zapytanieOfertowe = document.getElementsByName('zapytanieOfertowe');
-	for(var j=0; j<zapytanieOfertowe.length; j++){
+	for(var i=0; i<contactButtons.length; i++){
 		
 		zapytanieOfertowe[i].onclick = function(e){
 			e.preventDefault();
@@ -44,19 +45,28 @@ function popUp(showOnlyMessagePopUp = false){
 
 	document.getElementsByTagName('nav')[0].appendChild(bgDiv);
 	
-	document.getElementsByClassName('button-clear')[0].onclick = function(e){
-			e.preventDefault();
+	document.getElementsByClassName('button-clear')[0].onclick = function(event){
+			event.preventDefault();
 			formClear();
 	};
+
+	document.getElementsByClassName('button-send')[0].onclick = function(event){
+			//event.preventDefault();
+			formSend();
+	};	
 
 	console.log('popup working');
 }
 
 
 function closePopUp(){
-	console.log('popup closed');
-	// document.body.className = '';
-	document.getElementsByClassName('backgroundDiv')[0].outerHTML = '';
+	console.log('popup closed');	
+
+	document.getElementsByClassName('popUpMenu')[0].className = 'popUpMenu hide';
+
+	setTimeout(function() {
+		document.getElementsByClassName('backgroundDiv')[0].outerHTML = '';
+    }, 600);
 }
 
 
@@ -70,6 +80,18 @@ function formClear(){
 
 	}
 
+	document.getElementsByTagName('input')[0].value = "Wyślij";
+
+	document.getElementsByTagName('option')[0].selected = 'selected';
+
 	document.getElementsByTagName('textarea')[0].value = '';
+
+	console.log('Form cleared successfully!');
+
+}
+
+function formSend(){
+
+	console.log('Sending form...');
 
 }

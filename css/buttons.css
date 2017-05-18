@@ -1,4 +1,5 @@
-button{
+button,
+input[type=submit]{
 	width: auto;
 	color: #fff;
 	font-size: 1.33em;

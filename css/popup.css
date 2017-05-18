@@ -101,8 +101,10 @@ button.button-clear{
 
 }
 
-button.button-send{
+input[type=submit],
+.button-send{
 	width: 200px;
+	height: 40px;
 	background-color: #373;
 	position: absolute;
 	right:100px;
