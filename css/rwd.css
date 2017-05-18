@@ -1,7 +1,7 @@
 
 @media (max-width: 786px) {
 
-    button{
+    button, a.a-button-gray{
       display: block;
       width: 50%;
       margin: 20px auto ;
@@ -19,11 +19,17 @@
       float: none;
     }
 
-    footer{
-      display: none;
-    }
+
 }
 
 .hidden {
   display: none;
+}
+
+@media (min-width: 786px){
+
+    footer{
+      display: none;
+    }
+  
 }

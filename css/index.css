@@ -5,6 +5,10 @@ body{
     min-width: 786px;
 }
 
+a, a>h3{
+	text-decoration: none;
+}
+
 h3{
 	margin: 0;
 	margin-bottom:0.75em;
@@ -144,6 +148,7 @@ footer > .footer-buttons{
 
 footer > div > button {
 	float: none;
+	display: inline-block;
 }
 .footer-logo > a.logo {
 	text-align: center;
