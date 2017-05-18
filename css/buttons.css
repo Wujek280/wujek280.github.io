@@ -9,17 +9,28 @@ button {
 	border-radius: 3px;
 }
 
+a.a-button-gray{
+	color: white;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1.33em;
+	padding:7px 12px;
+	margin: 0px 5px;
+	margin-bottom:10px;
+	border-radius: 3px;
+}
 
-button.button-blue{
+
+.button-blue{
 	background-color: rgb(34, 62, 129);
 }
-button.button-blue:hover{
+.button-blue:hover{
 	background-color: rgb(60, 80, 150);
 }
 
-button.button-gray{
+.button-gray{
 	background-color: rgb(34, 31, 31);
 }
-button.button-gray:hover{
+.button-gray:hover{
 	background-color: rgb(60, 60, 60);
 }
