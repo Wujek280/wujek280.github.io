@@ -11,13 +11,22 @@
 }
 
 .popUpMenu {
+	display: block !important;
 	z-index: 210;
 	opacity: 1;
 	width: 786px;
 	height: 786px;
 	margin: auto;
 	transform: translateY(-50%);
-	margin-top:45%;
+    margin-top: 395px;
+}
+
+.show{
+    animation: 0.6s popUpShow;	
+}
+
+.hide{
+    animation: 0.6s popUpHide;
 }
 
 .callDiv {
@@ -36,7 +45,7 @@
 .callDiv > a >  h3 {
 	color:#373;
 	text-align: right;
-	font-weight: bold;
+	font-weight: bolder;
 }
 
 .replyDiv{
@@ -70,7 +79,8 @@ form{
 	height: 100%;
 }
 
-input {
+input,
+select {
 	width: 50%;
 	height: 28px;
 	margin: 0px auto 10px;
@@ -100,3 +110,10 @@ button.button-send{
 }
 
 
+@keyframes popUpShow {
+	0%{margin-top:-500px}
+}
+
+@keyframes popUpHide {
+	100%{margin-top:-500px}
+}

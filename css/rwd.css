@@ -19,11 +19,6 @@
       float: none;
     }
 
-
-}
-
-.hidden {
-  display: none;
 }
 
 @media (min-width: 786px){
@@ -31,5 +26,11 @@
     footer{
       display: none;
     }
-  
+
+}
+
+
+@media (min-width: 1000px){
+
+
 }

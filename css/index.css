@@ -5,7 +5,9 @@ body{
     min-width: 786px;
 }
 
-a, a>h3{
+a,
+a>h3,
+a:hover{
 	text-decoration: none;
 }
 
@@ -16,7 +18,7 @@ h3{
 
 /******************************************************/
 /*NAV*/
-nav{
+nav {
 	min-width: 786px;
 	width: 100%;
 	background-color: white;
