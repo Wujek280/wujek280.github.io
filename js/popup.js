@@ -1,14 +1,19 @@
 ﻿'use strict()'
 
-$(function(){
-
-	addEventListeners();
-	
-})
-
 var popUpHTML = "<div class='popUpMenu show'> <div class='callDiv'> <i class='times fa fa-times fa-2x' onclick='closePopUp();'></i> <h2>Infolinia</h2> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><a href='tel:+48664340449'> <h3>+48 664 340 449</h3> <i class='phone fa fa-phone-square fa-5x'></i></a></div><div class='replyDiv'> <i class='times fa fa-times fa-2x' onclick='closePopUp();'></i> <h2>Zostaw nam wiadomość</h2> <hr> <form action='https://formspree.io/s.polec@clickcommiunity.com' method='POST'><input type='submit' value='Wyślij' class='button-send' > <button class='button-clear'>Wyczyść</button>  <label for='name'>Imię i Nazwisko</label> <br><input id='name' name='name' type='text' > <br><label for='phone'>Telefon</label> <br><input id='phone' name='phone' type='tel' placeholder='790 654 321...'> <br><label for='dropdown' >Wybierz opcję z listy</label><br><select name='dropdown' id='dropdown'> <option value='-'>-</option> <option value='lorem1'>lorem1</option> <option value='lorem2'>lorem2</option> <option value='lorem3'>lorem3</option> </select> <br><label for='message' >Wiadomość</label> <br><textarea id='message' name='message' placeholder='Napisz nam coś...'></textarea> </form> </div></div>";
 
 var popUpMessageOnlyHTML = " <div class='popUpMenu'> <div class='replyDiv'> <i class='times fa fa-times fa-2x' onclick='closePopUp();'></i> <h2>Złóż zapytanie ofertowe</h2> <hr> <form action='https://formspree.io/s.polec@clickcommiunity.com' method='POST'><input type='submit' value='Wyślij' class='button-send' > <button class='button-clear'>Wyczyść</button>  <label for='name'>Imię i Nazwisko</label> <br><input id='name' name='name' type='text' > <br><label for='phone'>Telefon</label> <br><input id='phone' name='phone' type='tel' placeholder='790 654 321...'> <br><label for='dropdown' >Wybierz opcję z listy</label><br><select name='dropdown' id='dropdown'> <option value='-'>-</option> <option value='lorem1'>lorem1</option> <option value='lorem2'>lorem2</option> <option value='lorem3'>lorem3</option> </select> <br><label for='message' >Wiadomość</label> <br><textarea id='message' name='message' placeholder='Napisz nam coś...'></textarea> </form> </div></div>";
+
+//BODY ONLOAD FUNCTION//
+
+function scriptOnLoad(){
+
+	addEventListeners();
+
+}
+
+////////////////////////
+
 
 function addEventListeners(){
 
@@ -93,5 +98,7 @@ function formClear(){
 function formSend(){
 
 	console.log('Sending form...');
+
+	//debug under process analysis
 
 }

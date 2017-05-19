@@ -19,6 +19,46 @@
       float: none;
     }
 
+    /* FOR POPUP */ 
+
+    .popUpMenu {
+      width: 95vw;
+      min-width: 480px;
+    }
+
+    .replyDiv{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    input[type=submit],
+    button.button-clear{
+      right:10px;
+    }
+
+    i.phone{
+      transform: translateX(+50%);
+      top:13px;
+      right:50%;
+    }
+
+    .callDiv > a > h3 {
+      position: absolute;
+      bottom:0px;
+      left:50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+    .callDiv > a > h3:after {
+      content: '\A Infolinia';
+      white-space: pre;
+    }
+
+    .callDiv > h2,
+    .callDiv > p {
+      display: none;
+    }
+
 }
 
 @media (min-width: 786px){
