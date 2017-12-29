@@ -2,23 +2,58 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>Wujek280</title>
-   <link rel="stylesheet" href="css/bootstrap.min.css">
-   <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+   <title>CSS Grid Test</title>
+<!--    <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+<!--    <script src="/js/bootstrap.min.js" type="text/javascript"></script> -->
   <style>
      body{
         font-family: Roboto;
      } 
-     .jumbotron{
-        margin:30px;
-     }
+     .container {
+  background-color: #eee;
+  width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(2, 150px);
+  grid-template-columns: 3fr 3fr 1fr;
+  grid-gap: 30px;
+}
+
+.item {
+  padding: 20px;
+}
+.item.item--1 {
+  background-color: #236262;
+}
+.item.item--2 {
+  background-color: #768688;
+}
+.item.item--3 {
+  background-color: #312342;
+}
+.item.item--4 {
+  background-color: #383838;
+}
+.item.item--5 {
+  background-color: #454216;
+}
+.item.item--6 {
+  background-color: #933664;
+  grid-area: 2/3/1/2;
+}
+
   </style>
 </head>
 <body>
-   <div class="jumbotron">
-      <h2>Page in build</h2>
-      <hr>
-      <h3>...</h3>   
-   </div>
+   <body>
+    <div class="container">
+      <div class="item item--1">1: Orange</div>
+      <div class="item item--2">2: Green</div>
+      <div class="item item--3">3: Violet</div>
+      <div class="item item--4">4: Pink</div>
+      <div class="item item--5">5: Blue</div>
+      <div class="item item--6">6: Brown</div>
+    </div>    
+</body>
 </body>
 </html>
