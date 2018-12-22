@@ -1,0 +1,19 @@
+{
+    "short_name": "WJQ",
+    "name": "WJQ Limited",
+    "icons": [{
+            "src": "./icons-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "./icons-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/index.html",
+    "background_color": "#eee",
+    "display": "minimal-ui",
+    "theme_color": "#bada55"
+}

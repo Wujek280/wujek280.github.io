@@ -3,6 +3,8 @@
 <head>
    <meta charset="UTF-8">
    <title>CSS Grid Test</title>
+   <link rel="manifest" href="./manifest.json">
+   <meta name="theme-color" content="#bada55">
 <!--    <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 <!--    <script src="/js/bootstrap.min.js" type="text/javascript"></script> -->
   <style>
@@ -45,7 +47,6 @@
   </style>
 </head>
 <body>
-   <body>
     <div class="container">
       <div class="item item--1">1: Orange</div>
       <div class="item item--2">2: Green</div>
@@ -54,6 +55,11 @@
       <div class="item item--5">5: Blue</div>
       <div class="item item--6">6: Brown</div>
     </div>    
-</body>
+    <script>
+       
+      if('serviceWorker' in navigator){
+          navigator.serviceWorker.register('./sw.js')
+      }
+  </script>
 </body>
 </html>
