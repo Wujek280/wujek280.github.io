@@ -12,7 +12,7 @@
             "sizes": "512x512"
         }
     ],
-    "start_url": "/index.html",
+    "start_url": "https://wujek280.github.io/",
     "background_color": "#eee",
     "display": "standalone",
     "theme_color": "#bada55"
