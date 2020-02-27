@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Some redirect</title>
+	<link rel="manifest" href="./manifest.json">
+	<meta name="theme-color" content="#bada55">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google" content="notranslate" />
+
+	<style>
+		#app {
+			width: 100vw;
+			height: 100vh;
+		}
+	</style>
+</head>
+
+<body>
+
+	<iframe src="http://serwerwjq-expenses-app.herokuapp.com" id="app" frameborder=0></iframe>
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('./sw.js')
+		}
+	</script>
+</body>
+
+</html>
