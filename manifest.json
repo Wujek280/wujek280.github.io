@@ -1,6 +1,6 @@
 {
-    "short_name": "WJQ",
-    "name": "WJQ Limited",
+    "short_name": "Expenses App",
+    "name": "Expenses",
     "icons": [{
             "src": "./icons-192.png",
             "type": "image/png",
